@@ -48,3 +48,27 @@ conda activate RnaQsl
 ####################################
 
 `createdb --owner="username" myinner_db`
+
+## made a new version of README
+## please check
+
+# Project Overview
+This project involves working with SQLite databases and involves the analysis of Netflix titles data.
+
+## Environment Set-up
+To use SQLite features, execute the following commands in the terminal or use the included Python script:
+
+####################################
+# SQLite Database Setup
+####################################
+
+The included Python script (`code_example.py`) demonstrates:
+- Importing the SQLite library.
+- Connecting to or creating an SQLite database named `example.db`.
+- Creating a table named 'greetings'.
+- Inserting sample greetings into this table.
+
+You can run the script directly to set up your SQLite database environment:
+
+```bash
+python code_example.py
