@@ -14,14 +14,14 @@ This package includes a Python script (`setup.py`) for setting up your local SQL
 
 ### Creating the Database
 Run the `setup.py` script to create an SQLite database and import the data from `netflix_titles.csv`:
-```bash
-python setup.py
+    ```bash
+    python setup.py
 
 ## Usage
 ### Basic Operations
 Once the database is set up, you can run `code_example.py` to see examples of querying, updating, and deleting data:
-```bash
-python code_example.py
+    ```bash
+    python code_example.py
 
 ## Data Structure
 The `netflix_titles.csv` file and the corresponding SQLite database contain the following columns:
