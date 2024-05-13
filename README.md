@@ -49,6 +49,7 @@ conda activate RnaQsl
 
 `createdb --owner="username" myinner_db`
 
+##################################################
 ## made a new version of README
 ## please check
 
@@ -62,7 +63,7 @@ To use SQLite features, execute the following commands in the terminal or use th
 # SQLite Database Setup
 ####################################
 
-The included Python script (`code_example.py`) demonstrates:
+The included Python script (`init.py`) demonstrates:
 - Importing the SQLite library.
 - Connecting to or creating an SQLite database named `example.db`.
 - Creating a table named 'greetings'.
