@@ -42,7 +42,4 @@ The `netflix_titles.csv` file and the corresponding SQLite database contain the 
 - `listed_in` (genres)
 - `description`
 
-
-hi people:>
-
-qwer12311231
+Franda
