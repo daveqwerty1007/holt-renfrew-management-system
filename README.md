@@ -41,5 +41,3 @@ The `netflix_titles.csv` file and the corresponding SQLite database contain the 
 - `duration`
 - `listed_in` (genres)
 - `description`
-
-：D
