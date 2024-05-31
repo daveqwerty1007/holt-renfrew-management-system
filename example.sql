@@ -67,3 +67,45 @@ CREATE TABLE CartItems (
     FOREIGN KEY (productID) REFERENCES Products(productID)
 );
 
+-- Insert sample products
+INSERT INTO Products (name, description, price, stock_level, category)
+VALUES 
+('Laptop', 'High performance laptop', 1000.00, 50, 'Electronics'),
+('Smartphone', 'Latest model smartphone', 700.00, 100, 'Electronics'),
+('Tablet', '10-inch display tablet', 300.00, 200, 'Electronics');
+
+-- Insert sample customers
+INSERT INTO Customers (name, email, shipping_address, billing_address)
+VALUES 
+('John Doe', 'john@example.com', '123 Maple Street', '123 Maple Street'),
+('Jane Smith', 'jane@example.com', '456 Oak Street', '456 Oak Street');
+
+-- Insert a sample order
+INSERT INTO Orders (customerID, order_date, order_total, status)
+VALUES 
+(1, '2024-05-30', 1700.00, 'Processing');
+
+-- Insert sample order items
+INSERT INTO OrderItems (orderID, productID, quantity, unit_price)
+VALUES 
+(1, 1, 1, 1000.00),
+(1, 2, 1, 700.00);
+
+-- Insert sample user
+-- Assume `hash_password` is a function that hashes the password securely
+-- For this example, we're using a plain text password for simplicity
+INSERT INTO Users (username, email, password_hash)
+VALUES 
+('john_doe', 'john_doe@example.com', 'hashed_password');
+
+-- Insert a sample shopping cart
+INSERT INTO ShoppingCart (customerID)
+VALUES 
+(1);
+
+-- Insert sample cart items
+INSERT INTO CartItems (cartID, productID, quantity)
+VALUES 
+(1, 1, 1),
+(1, 2, 1);
+
