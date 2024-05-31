@@ -67,6 +67,7 @@ CREATE TABLE CartItems (
     FOREIGN KEY (productID) REFERENCES Products(productID)
 );
 
+----------------------------------------------------------------------
 -- Insert sample products
 INSERT INTO Products (name, description, price, stock_level, category)
 VALUES 
