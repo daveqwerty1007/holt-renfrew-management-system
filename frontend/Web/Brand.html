@@ -30,12 +30,25 @@
         <div class="section">
             <h2>Brands</h2>
             <p>Manage and view brands here.</p>
-            <!-- Your content for brands -->
+            <ul id="brand-list"></ul>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Holt Renfrew Management System</p>
     </footer>
     <script src="../script.js"></script>
+    <script>
+        fetch('http://127.0.0.1:5000/brands')
+            .then(response => response.json())
+            .then(data => {
+                const brandList = document.getElementById('brand-list');
+                data.forEach(brand => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${brand.name} - ${brand.description}`;
+                    brandList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching brands:', error));
+    </script>
 </body>
 </html>
