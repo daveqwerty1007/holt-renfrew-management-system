@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holt Renfrew Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #C12764;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #f8f8f8;
+            color: #C12764;
+        }
+        .user-login {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        .user-login a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .user-login a:hover {
+            color: #ddd;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 20px;
+            font-weight: 500;
+            border-bottom: 2px solid #C12764;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .card a {
+            text-decoration: none;
+            color: #333;
+        }
+        .card i {
+            font-size: 48px;
+            color: #C12764;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 14px;
+            color: #777;
+        }
+        footer {
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Holt Renfrew Management System</h1>
+        <div class="user-login">
+            <a href="login.html">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a href="brand.html">Brands</a>
+        <a href="product.html">Products</a>
+        <a href="branches.html">Branches</a>
+        <a href="suppliers.html">Suppliers</a>
+        <a href="deliveries.html">Deliveries</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="performance.html">Performance</a>
+        <a href="sales.html">Sales</a>
+    </nav>
+    <main>
+        <div class="section">
+            <h2>Welcome to the Holt Renfrew Management System</h2>
+            <p>Manage your inventory, track deliveries, monitor branch performance, and more with our comprehensive management system.</p>
+        </div>
+        <div class="section">
+            <h2>Common Functions</h2>
+            <div class="card-container">
+                <div class="card">
+                    <a href="brand.html">
+                        <i class="fas fa-tags"></i>
+                        <h3>Brands</h3>
+                        <p>View and manage brands</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="product.html">
+                        <i class="fas fa-box-open"></i>
+                        <h3>Products</h3>
+                        <p>View and manage products</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="branches.html">
+                        <i class="fas fa-store"></i>
+                        <h3>Branches</h3>
+                        <p>View and manage branches</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="suppliers.html">
+                        <i class="fas fa-truck"></i>
+                        <h3>Suppliers</h3>
+                        <p>View and manage suppliers</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="deliveries.html">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Deliveries</h3>
+                        <p>Track deliveries</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="feedback.html">
+                        <i class="fas fa-comments"></i>
+                        <h3>Feedback</h3>
+                        <p>Record and view feedback</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="performance.html">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Performance</h3>
+                        <p>Monitor branch performance</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="sales.html">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Sales</h3>
+                        <p>View sales data</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Holt Renfrew Management System</p>
+    </footer>
+</body>
+</html>

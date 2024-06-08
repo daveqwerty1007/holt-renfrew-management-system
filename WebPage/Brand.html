@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <h1>Brand Data</h1>
+    <table id="brandTable">
+        <thead>
+            <tr>
+                <th>Brand ID</th>
+                <th>Brand Name</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        // Function to fetch and parse the CSV data
+        function loadCSV() {
+            Papa.parse('sample_brand.csv', {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    displayData(results.data);
+                }
+            });
+        }
+
+        // Function to display the parsed data in the table
+        function displayData(data) {
+            const tbody = document.querySelector('#brandTable tbody');
+            data.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${row.BrandID}</td>
+                    <td>${row.BrandName}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Load the CSV data when the page loads
+        window.onload = loadCSV;
+    </script>
+</body>
+</html>
